@@ -1,11 +1,12 @@
-public class Pattern{
+public class Pattern {
     public static void main(String[] args) {
-        
-        pattern12(5);
+
+        pattern1(5);
 
     }
-    public static void pattern1(int n){
-        //box
+
+    public static void pattern1(int n) {
+        // box
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
@@ -13,8 +14,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern2(int n){
-        //right angle
+
+    public static void pattern2(int n) {
+        // right angle
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
@@ -22,8 +24,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern3(int n){
-        //upside-down right angle
+
+    public static void pattern3(int n) {
+        // upside-down right angle
         for (int i = 1; i <= n; i++) {
             for (int j = i; j <= n; j++) {
                 System.out.print("* ");
@@ -31,8 +34,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern4(int n){
-        //right angle (number)
+
+    public static void pattern4(int n) {
+        // right angle (number)
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
@@ -40,8 +44,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern5(int n){
-        //tringle sideways
+
+    public static void pattern5(int n) {
+        // tringle sideways
         for (int i = 1; i < n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
@@ -55,20 +60,22 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern6(int n){
-        //inverted right angle
+
+    public static void pattern6(int n) {
+        // inverted right angle
         for (int i = 1; i <= n; i++) {
             for (int j = i; j < n; j++) {
                 System.out.print("  ");
             }
-            for (int j = 1 ; j <= i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
-    public static void pattern7(int n){
-        //inverted upside-down right angle
+
+    public static void pattern7(int n) {
+        // inverted upside-down right angle
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j < i; j++) {
                 System.out.print("  ");
@@ -79,8 +86,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern8(int n){
-        //pyramid triangle
+
+    public static void pattern8(int n) {
+        // pyramid triangle
         for (int i = 1; i <= n; i++) {
             for (int j = i; j < n; j++) {
                 System.out.print(" ");
@@ -94,12 +102,13 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern9(int n){
-        //inverted pyramid triangle
+
+    public static void pattern9(int n) {
+        // inverted pyramid triangle
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(" ");
-            } 
+            }
             for (int j = i; j < n; j++) {
                 System.out.print("*");
             }
@@ -109,8 +118,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern10(int n){
-        //triangle
+
+    public static void pattern10(int n) {
+        // triangle
         for (int i = 1; i <= n; i++) {
             for (int j = i; j <= n; j++) {
                 System.out.print(" ");
@@ -121,8 +131,9 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern11(int n){
-        //inverted triangle
+
+    public static void pattern11(int n) {
+        // inverted triangle
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(" ");
@@ -133,10 +144,42 @@ public class Pattern{
             System.out.println();
         }
     }
-    public static void pattern12(int n){
+
+    public static void pattern17(int n) {
+        // diamond (number)
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                System.out.print("* ");
+            
+        }
+    }
+
+    public static void pattern18(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j <= n; j++) {
+                System.out.print("*");
+            }
+            for (int j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
