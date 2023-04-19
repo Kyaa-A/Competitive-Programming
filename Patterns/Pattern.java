@@ -1,7 +1,7 @@
 public class Pattern {
     public static void main(String[] args) {
 
-        pattern17(5);
+        pattern11(5);
 
     }
 

@@ -35,13 +35,13 @@ public class test2 {
             for (int j = 1; j <= i; j++) {
                 System.out.print("$");
             }
-            for (int j = n; j >= i * 2 - 1; j--) {
-                if(j == 1 || j == i * 2 -1){
-                    System.out.print("*");
-                }else{
-                    System.out.print(" ");
-                }
+            if(i == 1 || i == 2 || i == 3 || i == 4 ){
+                System.out.print("*");
             }
+            for (int j = i; j <= n -2; j++) {
+                System.out.print("# ");
+            }
+            
             System.out.println("");
             
         }
