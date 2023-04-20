@@ -1,41 +1,38 @@
-import java.util.Scanner;
+import java.sql.SQLOutput;
 
-public class test {
+public class test{
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter N : ");
-        int n = sc.nextInt();
-        System.out.print("Enter Symbol : ");
-
-        char c = sc.next().charAt(0);
-
+        
+        test(5, "* ", "  ");
+    }
+    static void test(int n, String symbol, String space){
         for (int i = 1; i <= n; i++) {
-
-            for (int j = 1; j <= n - i; j++)
-
-            {
-                System.out.print(" ");
+            for (int j = n; j > i; j--) {
+                System.out.print(space);
             }
-            if (i == 1 || i == n)
-                for (int j = 1; j <= i * 2 - 1; j++)
-
-                {
-                    System.out.print(c);
-                }
-            else {
-                for (int j = 1; j <= i * 2 - 1; j++)
-
-                {
-                    if (j == 1 || j == i * 2 - 1)
-                        System.out.print(c);
-                    else
-
-                        System.out.print(" ");
-                }
+            System.out.print(symbol);
+            for (int j = 1; j < (i-1)*2 ; j++) {
+                System.out.print(space);
             }
-            System.out.println();
-
+            if(i == 1){
+                System.out.println();
+            }else{
+                System.out.print(symbol + "\n");
+            }
+        }
+        for (int i = n-1; i >= 1; i--) {
+            for (int j = n; j > i; j--) {
+                System.out.print(space);
+            }
+            System.out.print(symbol);
+            for (int j = 1; j < (i-1)*2; j++) {
+                System.out.print(space);
+            }
+            if(i == 1){
+                System.out.println();
+            }else{
+                System.out.print(symbol + "\n");
+            }
         }
     }
 }
