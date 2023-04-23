@@ -2,7 +2,7 @@ package Second;
 
 import java.util.Scanner;
 
-public class Fifthprob {
+public class MachineProblem5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int scoreA = 0;
