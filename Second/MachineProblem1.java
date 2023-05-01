@@ -28,7 +28,7 @@ public class MachineProblem1 {
                     input = input.substring(0, index) + input.substring(index + keyword.length());
                 }
             }
-            System.out.println("Student " + i + ": " + count);
+            System.out.println("Student " + i + ": " + count +  " of " + n);
         }
         scan.close();
     }
