@@ -12,7 +12,7 @@ public class MachineProblem4{
             double totalCost = scan.nextDouble();
             int numRecipients = scan.nextInt();
             for (int j = 0; j < numRecipients; j++) {
-                int recipient = scan.nextInt() - 1; // subtract 1 to match array index
+                int recipient = scan.nextInt() - 1; 
                 double amount = totalCost / numRecipients;
                 gains[recipient] += amount;
                 costs[i] += amount;
